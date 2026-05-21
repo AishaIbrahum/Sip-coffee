@@ -8,10 +8,11 @@ Designed to simulate a real coffee shop experience with smooth UI, cart system, 
 
 ## 🚀 Live Demo
 
-🔗 GitHub Pages Demo:  
-https://your-username.github.io/sip-coffee/
 
----
+<video width="100%" controls>
+  <source src="assets/video/screen-recording.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## 📸 Preview
 
@@ -58,23 +59,6 @@ The website includes:
 
 ---
 
-## 📂 Suggested Folder Structure
-
-Sip-coffee/
-│── index.html
-│── contact.html
-│── login.html
-│── signup.html
-│── cart.html
-│── payment.html
-│── README.md
-│
-├── css/
-├── js/
-├── images/
-├── videos/
-
----
 
 ## 📌 How to Run
 
