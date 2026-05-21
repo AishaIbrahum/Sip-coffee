@@ -112,3 +112,9 @@ Sip-coffee/
 │   └── images/
 │
 └── README.md
+## 👩‍💻 Author
+
+### Aisha Ibrahum  
+💻 Frontend Developer  
+🎨 UI/UX Enthusiast  
+☕ Passionate about building clean web experiences
