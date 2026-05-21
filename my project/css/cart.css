@@ -1,0 +1,182 @@
+/* ===== ROOT COLORS ===== */
+:root {
+  --brown-dark: #1f140e;
+  --brown-main: #4b5333;
+  --brown-light: #c69c6d;
+  --cream: #f8f5f2;
+  --white: #ffffff;
+  --gray: #777;
+}
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--cream);
+  color: var(--brown-dark);
+}
+
+/* ===== GLOBAL ===== */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: rgba(31, 20, 14, 0.95);
+  padding: 15px 0;
+}
+
+.logo {
+  color: var(--white);
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== CART PAGE ===== */
+.cart-page {
+  padding: 60px 0;
+}
+
+.cart-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cart-header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.cart-header p {
+  color: var(--gray);
+}
+
+/* ===== LAYOUT ===== */
+.cart-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+/* ===== CART ITEMS ===== */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-item {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.cart-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-info h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.item-info span {
+  color: var(--brown-light);
+  font-weight: bold;
+}
+
+.item-qty {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-qty button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: var(--brown-main);
+  color: white;
+  cursor: pointer;
+}
+
+.remove {
+  border: none;
+  background: none;
+  color: #c0392b;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* ===== SUMMARY ===== */
+.cart-summary {
+  background: var(--white);
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  height: fit-content;
+}
+
+.cart-summary h3 {
+  margin-bottom: 25px;
+}
+
+.summary-row,
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.summary-total {
+  font-size: 18px;
+}
+
+.cart-summary hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+/* ===== BUTTONS ===== */
+.btn.primary {
+  width: 100%;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(135deg, var(--brown-main), var(--brown-light));
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.continue {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: var(--brown-main);
+  text-decoration: none;
+  font-size: 14px;
+}

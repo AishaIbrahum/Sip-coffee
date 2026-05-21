@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    h1 { text-align: center; margin-bottom: 20px; }
+    .payment-container { max-width: 500px; margin: auto; }
+    .payment-info { margin-bottom: 20px; }
+    label { display: block; margin-bottom: 5px; }
+    input { width: 100%; padding: 8px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc; }
+    .pay-btn { width: 100%; padding: 12px; background: #1f140e; color: #fff; border: none; cursor: pointer; border-radius: 5px; font-size: 1em; }
+  </style>
+</head>
+<body>
+
+<h1>Payment</h1>
+
+<div class="payment-container">
+  <div class="payment-info" id="paymentInfo">
+    <!-- Product details will appear here -->
+  </div>
+
+  <form id="paymentForm">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" required />
+
+    <label for="card">Card Number</label>
+    <input type="text" id="card" required />
+
+    <label for="expiry">Expiry Date</label>
+    <input type="text" id="expiry" placeholder="MM/YY" required />
+
+    <label for="cvv">CVV</label>
+    <input type="text" id="cvv" required />
+
+    <button type="submit" class="pay-btn">Pay Now</button>
+  </form>
+</div>
+
+<script>
+  const paymentInfo = document.getElementById('paymentInfo');
+  const paymentForm = document.getElementById('paymentForm');
+
+  const selectedCoffee = localStorage.getItem('selectedCoffee');
+  const selectedPrice = Number(localStorage.getItem('selectedPrice'));
+
+  if (selectedCoffee && selectedPrice) {
+    paymentInfo.innerHTML = `
+      <p>Product: <strong>${selectedCoffee}</strong></p>
+      <p>Price: <strong>${selectedPrice} SAR</strong></p>
+    `;
+  } else {
+    paymentInfo.innerHTML = `<p>Your cart is empty. <a href="index.html">Go back</a></p>`;
+  }
+
+  paymentForm.addEventListener('submit', e => {
+    e.preventDefault();
+    alert(`Thank you for purchasing ${selectedCoffee} for ${selectedPrice} SAR!`);
+    localStorage.removeItem('selectedCoffee');
+    localStorage.removeItem('selectedPrice');
+    window.location.href = 'index.html';
+  });
+</script>
+
+</body>
+</html>

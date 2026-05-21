@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafe & Dessert</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-new.css">
+
+</head>
+
+
+
+
+<body>
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container header-container">
+
+      <!-- LOGO -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="SIP Coffee Logo">
+          <div class="logo-text">
+            <span class="main">SIP</span>
+            <span class="sub">COFFEE</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- NAV -->
+      <nav class="nav">
+        <a href="#home" class="active">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#best">Best Sellers</a>
+        <a href="#crops">Our Crops</a>
+        <a href="#about">About Us</a>
+      </nav>
+
+      <!-- ACTIONS -->
+      <div class="header-actions">
+        <a href="cart.html" class="cart-btn">
+          🛒 <span id="cart-count">0</span>
+        </a>
+        <a href="login.html" class="login-btn">Login</a>
+        <a href="contact.html" class="header-btn">Contact</a>
+      </div>
+
+
+    </div>
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+
+  <section class="hero-interactive" id="home">
+    <div class="hero-bg-layer" id="hero-bg"></div>
+
+    <!-- Navigation Arrows -->
+    <button class="nav-arrow prev" id="prev-slide">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M15 18l-6-6 6-6" />
+      </svg>
+    </button>
+    <button class="nav-arrow next" id="next-slide">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 18l6-6-6-6" />
+      </svg>
+    </button>
+
+    <div class="hero-content container">
+      <!-- Left: Typography -->
+      <div class="hero-typography">
+        <div class="eyebrow" id="slide-eyebrow">
+          <span class="dot"></span> <span id="eyebrow-text">Artisan Collection</span>
+        </div>
+        <h1 class="big-title" id="slide-title">Coffee<br>Beans</h1>
+        <p class="hero-description" id="slide-desc">
+          Ethically sourced, roasted to perfection to bring out the distinct notes of every origin.
+        </p>
+        <div class="cta-group">
+          <a href="#menu" class="btn primary">Order Now</a>
+
+        </div>
+      </div>
+
+      <!-- Right: Visual -->
+      <div class="hero-visual-stage">
+        <div class="visual-circle"></div>
+        <img src="images/bag2-removebg-preview.png" alt="Product" class="main-product-img" id="slide-image">
+
+        <!-- Floating Elements -->
+        <div class="floating-elements" id="floating-elements">
+          <!-- Dynamically populated -->
+        </div>
+
+        <!-- Info Card -->
+        <div class="info-card" id="info-card">
+          <div class="card-icon">
+            <img src="images/ncup.png" alt="icon" id="card-icon-img">
+          </div>
+          <div class="card-text">
+            <h3 id="card-title">Ethiopian Roast</h3>
+            <div class="card-meta">
+              <span id="card-rating">★ 4.9</span>
+              <span class="sep">•</span>
+              <span id="card-time">Fresh</span>
+            </div>
+          </div>
+          <button class="card-btn">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="line"></div>
+    </div>
+  </section>
+
+
+  <!-- ================= SEARCH ================= -->
+  <div class="search-wrapper" data-animate="fade-up">
+    <div class="search-box">
+      <div class="search-input">
+        <span class="icon">🔍</span>
+        <input type="text" placeholder="Search coffee, desserts, or offers..." />
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- ===================== Categories Section ===================== -->
+  <section class="categories" id="menu" data-animate="fade-up">
+    <div class="container">
+
+      <div class="section-header">
+        <h2 class="section-title">Menu</h2>
+        <p class="section-subtitle">Explore a world of unique flavors</p>
+      </div>
+
+      <div class="category-tabs">
+        <button class="category-tab active" data-category="all">All</button>
+        <button class="category-tab" data-category="hot">Hot Drinks</button>
+        <button class="category-tab" data-category="cold">Cold Drinks</button>
+        <button class="category-tab" data-category="desserts">Desserts</button>
+        <button class="category-tab" data-category="bakery">Bakery</button>
+      </div>
+
+      <div class="products-slider-wrapper">
+        <button class="slider-arrow left" aria-label="Previous">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M12 16L6 10L12 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+
+        <div class="products-slider">
+
+          <!-- Cappuccino -->
+          <div class="product-card" data-category="hot">
+            <div class="product-badge">New</div>
+            <div class="product-image">
+              <img src="images/h.jpg" alt="Cappuccino">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Cappuccino</h3>
+              <p class="product-desc">Rich espresso topped with creamy milk foam</p>
+              <div class="product-footer">
+                <span class="product-price">120 SAR</span>
+                <button class="btn-add" aria-label="Add to cart">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Iced Latte -->
+          <div class="product-card" data-category="cold">
+            <div class="product-badge hot">Best Seller</div>
+            <div class="product-image">
+              <img src="images/hdr.jpg" alt="Iced Latte">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Iced Latte</h3>
+              <p class="product-desc">Cold milk blended with refreshing espresso</p>
+              <div class="product-footer">
+                <span class="product-price">130 SAR</span>
+                <button class="btn-add" aria-label="Add to cart">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chocolate Cake -->
+          <div class="product-card" data-category="desserts">
+            <div class="product-image">
+              <img src="images/seew.jpg" alt="Chocolate Cake">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Chocolate Cake</h3>
+              <p class="product-desc">Layers of rich premium chocolate</p>
+              <div class="product-footer">
+                <span class="product-price">150 SAR</span>
+                <button class="btn-add" aria-label="Add to cart">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Croissant -->
+          <div class="product-card" data-category="bakery">
+            <div class="product-image">
+              <img src="images/swe.jpg" alt="Croissant">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Croissant</h3>
+              <p class="product-desc">Freshly baked every morning</p>
+              <div class="product-footer">
+                <span class="product-price">90 SAR</span>
+                <button class="btn-add" aria-label="Add to cart">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mocha -->
+          <div class="product-card" data-category="hot">
+            <div class="product-image">
+              <img src="images/col.jpg" alt="Mocha">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Mocha</h3>
+              <p class="product-desc">A perfect blend of coffee and chocolate</p>
+              <div class="product-footer">
+                <span class="product-price">140 SAR</span>
+                <button class="btn-add" aria-label="Add to cart">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cheesecake -->
+          <div class="product-card" data-category="desserts">
+            <div class="product-badge special">Special Offer</div>
+            <div class="product-image">
+              <img src="images/cheese.jpg" alt="Cheesecake">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Cheesecake</h3>
+              <p class="product-desc">Smooth and creamy with berry sauce</p>
+              <div class="product-footer">
+                <span class="product-price">160 SAR</span>
+                <button class="btn-add" aria-label="Add to cart">+</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="slider-arrow right" aria-label="Next">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M8 4L14 10L8 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    // Category filter
+    const tabs = document.querySelectorAll('.category-tab');
+    const cards = document.querySelectorAll('.product-card');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const category = tab.dataset.category;
+
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        cards.forEach(card => {
+          if (category === 'all' || card.dataset.category === category) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Slider arrows
+    const slider = document.querySelector('.products-slider');
+    const leftArrow = document.querySelector('.slider-arrow.left');
+    const rightArrow = document.querySelector('.slider-arrow.right');
+
+    leftArrow.addEventListener('click', () => {
+      slider.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+
+    rightArrow.addEventListener('click', () => {
+      slider.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+  </script>
+  <!-- ===================== Best Sellers Section ===================== -->
+  <!-- ======================= BEST SELLER SECTION ======================= -->
+  <section class="best-seller" id="best" data-animate="fade-up">
+    <div class="container">
+      <h2>Top Products</h2>
+      <p class="section-subtitle">Handpicked Excellence</p>
+
+      <div class="products-grid">
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/es.jpg" alt="Cappuccino">
+          </div>
+          <div class="product-rating">★ 4.7 <span>(2.3k)</span></div>
+          <h3>Cappuccino</h3>
+          <p>Bold espresso crowned with rich, frothy foam.</p>
+          <div class="product-price">18 SAR</div>
+          <a href="#" class="product-btn">Add to Cart</a>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/col.jpg" alt="Latte">
+          </div>
+          <div class="product-rating">★ 5.0 <span>(4.1k)</span></div>
+          <h3>Latte</h3>
+          <p>Smooth, creamy, and perfectly balanced.</p>
+          <div class="product-price">20 SAR</div>
+          <a href="#" class="product-btn">Add to Cart</a>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/sw.jpg" alt="Mocha">
+          </div>
+          <div class="product-rating">★ 4.8 <span>(3.5k)</span></div>
+          <h3>Mocha</h3>
+          <p>A sweet fusion of chocolate and coffee indulgence.</p>
+          <div class="product-price">22 SAR</div>
+          <a href="#" class="product-btn">Add to Cart</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================= PROMO SHOWCASE ======================= -->
+  <section class="promo-showcase" data-animate="fade-up">
+    <div class="container promo-container">
+
+      <!-- Background Text -->
+      <div class="promo-bg-text">PREMIUM</div>
+
+      <!-- Left Side: Cold Coffee -->
+      <div class="promo-card left">
+        <div class="promo-content">
+          <span class="promo-badge">New Arrival</span>
+          <h3>Cold Brew<br>Special</h3>
+          <p>Steeped for 24 hours to extract deep, smooth flavor notes with zero bitterness.</p>
+          <div class="promo-price">
+            <span class="old">25 SAR</span>
+            <span class="new">18 SAR</span>
+          </div>
+          <button class="btn-promo" onclick="orderProduct('cold-coffee')">Order Now</button>
+        </div>
+        <div class="promo-img-wrap">
+          <div class="promo-blob"></div>
+          <img src="images/cup-removebg-preview.png" alt="Cold Coffee" class="promo-img">
+        </div>
+      </div>
+
+      <!-- Center: Connector -->
+      <div class="promo-connector">
+        <div class="connector-line"></div>
+        <div class="connector-icon">
+          <span>&</span>
+        </div>
+        <div class="connector-line"></div>
+      </div>
+
+      <!-- Right Side: Coffee Beans -->
+      <div class="promo-card right">
+        <div class="promo-img-wrap">
+          <div class="promo-blob secondary"></div>
+          <img src="images/bag2-removebg-preview.png" alt="Coffee Bag" class="promo-img">
+        </div>
+        <div class="promo-content">
+          <span class="promo-badge dark">Best Seller</span>
+          <h3>Ethiopian<br>Yirgacheffe</h3>
+          <p>Floral aroma with citrus notes. The perfect bean for your morning ritual.</p>
+          <div class="promo-price">
+            <span class="new">70 SAR</span>
+          </div>
+          <button class="btn-promo outline" onclick="orderProduct('coffee-bag')">Shop Beans</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================= CTA SECTION ======================= -->
+  <section class="cta-section" data-animate="fade-up">
+    <div class="cta-overlay">
+      <div class="cta-content">
+        <span class="cta-subtitle">The Best Coffee Experience</span>
+        <h2>
+          All Coffee Products<br>
+          In One Place
+        </h2>
+        <p>
+          Premium coffee beans, brewing tools, and accessories crafted for true coffee lovers.
+        </p>
+        <a href="#" class="cta-btn">Shop Collection</a>
+      </div>
+    </div>
+  </section>
+  <!-- ========== OUR CROPS ========== -->
+  <section id="crops" data-animate="fade-up">
+    <div class="crops-container">
+
+      <!-- Right Side Items -->
+      <div class="crops-items right-items">
+
+        <button class="coffee-btn" onclick="goToPayment('Ethiopian Coffee', 45)" data-origin="ethiopia">
+          <div class="coffee-info">
+            <span class="coffee-icon">🌍</span>
+            <div class="coffee-details">
+              <span class="coffee-name">Ethiopian Coffee</span>
+              <span class="coffee-origin">Premium Origin</span>
+            </div>
+          </div>
+          <div class="coffee-price-container">
+            <span class="coffee-price">45 SAR</span>
+            <span class="add-icon">+</span>
+          </div>
+        </button>
+
+        <button class="coffee-btn" onclick="goToPayment('Brazilian Coffee', 40)" data-origin="brazil">
+          <div class="coffee-info">
+            <span class="coffee-icon">🇧🇷</span>
+            <div class="coffee-details">
+              <span class="coffee-name">Brazilian Coffee</span>
+              <span class="coffee-origin">South American Origin</span>
+            </div>
+          </div>
+          <div class="coffee-price-container">
+            <span class="coffee-price">40 SAR</span>
+            <span class="add-icon">+</span>
+          </div>
+        </button>
+
+        <button class="coffee-btn" onclick="goToPayment('Colombian Coffee', 42)" data-origin="colombia">
+          <div class="coffee-info">
+            <span class="coffee-icon">🇨🇴</span>
+            <div class="coffee-details">
+              <span class="coffee-name">Colombian Coffee</span>
+              <span class="coffee-origin">Andean Origin</span>
+            </div>
+          </div>
+          <div class="coffee-price-container">
+            <span class="coffee-price">42 SAR</span>
+            <span class="add-icon">+</span>
+          </div>
+        </button>
+
+      </div>
+
+      <!-- Center Image -->
+      <div class="crops-center">
+        <div class="center-image-wrapper">
+          <div class="glow-effect"></div>
+          <img src="images/bag2-removebg-preview.png" alt="Prime Roast Coffee Bag" class="center-bag">
+          <div class="floating-badge">
+            <span class="badge-text">Premium</span>
+            <span class="badge-subtext">Quality</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left Side Items -->
+      <div class="crops-items left-items">
+
+        <button class="coffee-btn" onclick="goToPayment('Yemeni Coffee', 55)" data-origin="yemen">
+          <div class="coffee-info">
+            <span class="coffee-icon">🇾🇪</span>
+            <div class="coffee-details">
+              <span class="coffee-name">Yemeni Coffee</span>
+              <span class="coffee-origin">Historic Origin</span>
+            </div>
+          </div>
+          <div class="coffee-price-container">
+            <span class="coffee-price">55 SAR</span>
+            <span class="add-icon">+</span>
+          </div>
+        </button>
+
+        <button class="coffee-btn" onclick="goToPayment('Guatemalan Coffee', 44)" data-origin="guatemala">
+          <div class="coffee-info">
+            <span class="coffee-icon">🇬🇹</span>
+            <div class="coffee-details">
+              <span class="coffee-name">Guatemalan Coffee</span>
+              <span class="coffee-origin">Volcanic Origin</span>
+            </div>
+          </div>
+          <div class="coffee-price-container">
+            <span class="coffee-price">44 SAR</span>
+            <span class="add-icon">+</span>
+          </div>
+        </button>
+
+        <button class="coffee-btn" onclick="goToPayment('Kenyan Coffee', 48)" data-origin="kenya">
+          <div class="coffee-info">
+            <span class="coffee-icon">🇰🇪</span>
+            <div class="coffee-details">
+              <span class="coffee-name">Kenyan Coffee</span>
+              <span class="coffee-origin">East African Origin</span>
+            </div>
+          </div>
+          <div class="coffee-price-container">
+            <span class="coffee-price">48 SAR</span>
+            <span class="add-icon">+</span>
+          </div>
+        </button>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================= FRESH BAKERY ======================= -->
+  <section class="bakery-section" id="bakery" data-animate="fade-up">
+    <div class="container">
+      <div class="section-header-left">
+        <span class="sub-badge">Daily Fresh</span>
+        <h2>From Our Oven</h2>
+        <p>Handcrafted pastries baked fresh every morning.</p>
+      </div>
+
+      <div class="bakery-layout">
+
+        <!-- Featured Big Item -->
+        <div class="bakery-featured">
+          <div class="featured-bg-circle"></div>
+          <img src="images/mk3.png" alt="Signature Pastry" class="featured-img">
+          <div class="featured-badge">
+            <span class="time">7:00 AM</span>
+            <span class="label">Fresh Batch</span>
+          </div>
+          <div class="featured-content">
+            <h3>Golden Croissant</h3>
+            <p>Our signature 72-layer butter croissant, baked to golden perfection.</p>
+            <div class="price-row">
+              <span class="price">15 SAR</span>
+              <button class="add-btn-round">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bakery List -->
+        <div class="bakery-list-grid">
+
+          <!-- Item 1 -->
+          <div class="bakery-item-card">
+            <div class="item-img">
+              <img src="images/bakery2.jpg" alt="Sweet Croissant">
+            </div>
+            <div class="item-details">
+              <h4>Almond Croissant</h4>
+              <p>Topped with toasted almonds.</p>
+              <div class="item-bottom">
+                <span class="price">18 SAR</span>
+                <button class="btn-text">Add</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="bakery-item-card">
+            <div class="item-img">
+              <img src="images/bakery7.jpg" alt="Chocolate Cake">
+            </div>
+            <div class="item-details">
+              <h4>Chocolate Slice</h4>
+              <p>Decadent dark chocolate.</p>
+              <div class="item-bottom">
+                <span class="price">22 SAR</span>
+                <button class="btn-text">Add</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="bakery-item-card">
+            <div class="item-img">
+              <img src="images/bakery5.jpg" alt="Cheesecake">
+            </div>
+            <div class="item-details">
+              <h4>Berry Cheesecake</h4>
+              <p>Creamy with fresh berries.</p>
+              <div class="item-bottom">
+                <span class="price">24 SAR</span>
+                <button class="btn-text">Add</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="bakery-item-card highlight">
+            <div class="item-content">
+              <p>Get a box of 6 mixed pastries.</p>
+              <span class="price">85 SAR</span>
+              <button class="btn-fill">Order Box</button>
+            </div>
+            <div class="item-icon">📦</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Payment function
+    function goToPayment(coffeeName, price) {
+      console.log(`Selected: ${coffeeName} - ${price} SAR`);
+      // Add your payment logic here
+      alert(`Selected ${coffeeName} for ${price} SAR`);
+    }
+
+    // Add ripple effect on click
+    document.querySelectorAll('.coffee-btn').forEach(button => {
+      button.addEventListener('click', function (e) {
+        const ripple = document.createElement('span');
+        ripple.classList.add('ripple');
+        this.appendChild(ripple);
+
+        const rect = this.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        const x = e.clientX - rect.left - size / 2;
+        const y = e.clientY - rect.top - size / 2;
+
+        ripple.style.width = ripple.style.height = size + 'px';
+        ripple.style.left = x + 'px';
+        ripple.style.top = y + 'px';
+
+        setTimeout(() => ripple.remove(), 600);
+      });
+    });
+  </script>
+
+
+  <!-- ========== ABOUT US ========== -->
+  <section class="about-section" id="about" data-animate="fade-up">
+    <div class="container">
+
+      <div class="about-image">
+        <img src="images/cuplogo.png" alt="Coffee & Bakery">
+      </div>
+
+      <div class="about-text">
+        <h2>About Our Coffee & Bakery</h2>
+
+        <p>
+          We take pride in crafting exceptional coffee made from carefully selected beans,
+          paired with freshly baked pastries and desserts prepared daily.
+          Every detail is designed to deliver rich flavors and a warm, welcoming experience.
+        </p>
+
+        <ul>
+          <li>Specialty coffee brewed to perfection</li>
+          <li>Freshly baked pastries and handcrafted desserts</li>
+          <li>Premium, locally sourced ingredients</li>
+        </ul>
+
+        <a href="#" class="btn">Visit Our Coffee</a>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- ========== GALLERY ========== -->
+  <!-- ========== VISUAL GALLERY ========== -->
+  <section id="gallery" class="gallery-section" data-animate="fade-up">
+    <div class="container">
+      <div class="section-header center" style="text-align: center; margin-bottom: 50px;">
+        <span class="sub-badge">@BaristaCafe</span>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 42px; color: #2a1d15; margin: 10px 0;">Visual
+          Journey</h2>
+        <p style="color: #666;">Follow us on Instagram for daily inspiration.</p>
+      </div>
+
+      <div class="gallery-grid-modern">
+        <!-- Item 1 (Large) -->
+        <div class="gallery-item large">
+          <img src="images/p1.jpg" alt="Fresh Bakery">
+          <div class="gallery-overlay">
+            <span>Freshly Baked</span>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery-item">
+          <img src="images/p2.jpg" alt="Coffee Art">
+          <div class="gallery-overlay">
+            <span>Barista Art</span>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="gallery-item">
+          <img src="images/p3.jpg" alt="Best Seller">
+          <div class="gallery-overlay">
+            <span>Customer Favorite</span>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="gallery-item">
+          <img src="images/p4.jpg" alt="Hot Coffee">
+          <div class="gallery-overlay">
+            <span>Cozy Vibes</span>
+          </div>
+        </div>
+
+        <!-- Item 5 (Wide) -->
+        <div class="gallery-item wide">
+          <img src="images/p6.jpg" alt="Iced Coffee">
+          <div class="gallery-overlay">
+            <span>Cold Brew</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-action" style="text-align: center; margin-top: 40px;">
+        <a href="#" class="btn-promo outline">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="testimonials-section" data-animate="fade-up">
+    <div class="container">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+          <div class="client-photo">
+            <img src="images/client1.jpg" alt="Client 1">
+          </div>
+          <h3 class="client-name">Sarah Johnson</h3>
+          <p class="client-feedback">"The coffee here is absolutely amazing! I love the cozy atmosphere and friendly
+            staff."</p>
+          <div class="client-rating">★★★★★</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="client-photo">
+            <img src="images/client2.jpg" alt="Client 2">
+          </div>
+          <h3 class="client-name">Michael Lee</h3>
+          <p class="client-feedback">"A perfect spot to enjoy quality coffee and desserts. Highly recommended!"</p>
+          <div class="client-rating">★★★★☆</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="client-photo">
+            <img src="images/steps.jpg" alt="Client 3">
+          </div>
+          <h3 class="client-name">Emma Brown</h3>
+          <p class="client-feedback">"I always come here to relax after work. The coffee is rich and flavorful."</p>
+          <div class="client-rating">★★★★★</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" data-animate="fade-up">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-col brand">
+          <h3 class="footer-title">Barista Sweets</h3>
+          <p class="footer-text">
+            We offer the finest types of sweets and pastries made daily from the best natural ingredients.
+          </p>
+
+          <div class="social-links">
+            <a href="#" class="social-link">📘</a>
+            <a href="#" class="social-link">📷</a>
+            <a href="#" class="social-link">🐦</a>
+            <a href="#" class="social-link">📱</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#bestsellers">Best Sellers</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="#">Home Delivery</a></li>
+            <li><a href="#">Special Occasions</a></li>
+            <li><a href="#">Custom Orders</a></li>
+            <li><a href="#">Loyalty Program</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact Us</h4>
+          <ul class="footer-contact">
+            <li>📍 Riyadh, Saudi Arabia</li>
+            <li>📞 +966 50 123 4567</li>
+            <li>✉️ info@barista.sa</li>
+            <li>🕒 Daily: 8 AM - 12 AM</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Barista Sweets. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
