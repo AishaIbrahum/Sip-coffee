@@ -8,13 +8,9 @@ Designed to simulate a real coffee shop experience with smooth UI, cart system, 
 
 ## 🚀 Live Demo
 
+## 🎥 Live Demo
 
-<video width="100%" controls>
-  <source src="assets/video/screen-recording.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-## 📸 Preview
+▶️ [اضغط هنا لمشاهدة الديمو](https://github.com/AishaIbrahum/Sip-coffee/raw/main/assets/video/demo.mp4)
 
 ### 🖥️ Desktop View
 ![Desktop Preview](images/desktop.png)
