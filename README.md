@@ -1,4 +1,3 @@
-
 # ☕ Sip Coffee Website
 
 A modern, fully responsive coffee shop website built using **HTML, CSS, and JavaScript**.  
@@ -22,25 +21,19 @@ It provides users with a smooth café-like journey where they can:
 - Review and manage selected items
 - Proceed through a simulated checkout process
 
-The main goal is to create a **realistic digital coffee shop experience** using only frontend technologies.
-
 ---
 
 ## 📌 User Journey
-
-The website follows a simple and realistic flow:
 
 1. User lands on the homepage  
 2. Browses coffee menu and products  
 3. Selects items and adds them to cart  
 4. Reviews order in cart page  
-5. Proceeds to checkout (payment UI simulation)  
+5. Proceeds to checkout (payment UI simulation)
 
 ---
 
 ## 🧾 Pages Included
-
-This project includes multiple structured pages:
 
 - 🏠 Home Page → Café introduction and featured items  
 - ☕ Menu / Products Page → Coffee selection and display  
@@ -54,37 +47,20 @@ This project includes multiple structured pages:
 
 ## ✨ Features
 
-### 🎨 UI/UX Design
-- Modern coffee shop aesthetic design  
-- Clean layout and typography  
-- Smooth and consistent user interface  
-
-### 🛒 Shopping System (Frontend)
-- Add to cart functionality  
-- Remove items from cart  
-- Order summary system  
-
-### 🔐 Authentication UI
-- Login page design  
-- Signup page design  
-- Form structure UI (frontend only)  
-
-### 📱 Responsive Design
-- Fully responsive across all devices  
-- Mobile, tablet, and desktop optimized  
-
-### ⚡ User Experience
-- Smooth navigation between pages  
-- Lightweight and fast performance  
-- Simple and intuitive flow  
+- 🎨 Modern coffee shop aesthetic design  
+- 🛒 Add to cart functionality  
+- 🔐 Login & Signup UI  
+- 💳 Payment page UI simulation  
+- 📱 Fully responsive design  
+- ⚡ Smooth and fast user experience  
 
 ---
 
 ## 🧱 Tech Stack
 
-- HTML5 → Structure  
-- CSS3 → Styling & Layout  
-- JavaScript (Vanilla JS) → Interactivity  
+- HTML5  
+- CSS3  
+- JavaScript (Vanilla JS)
 
 ---
 
@@ -112,9 +88,3 @@ Sip-coffee/
 │   └── images/
 │
 └── README.md
-## 👩‍💻 Author
-
-### Aisha Ibrahum  
-💻 Frontend Developer  
-🎨 UI/UX Enthusiast  
-☕ Passionate about building clean web experiences
